@@ -1,0 +1,954 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.topnav{
+    width: 100%;
+    height: 70px;
+    background-color: #fff;
+    position: fixed;
+}
+.topnav > article{
+    width: 95%;
+    height: inherit;
+    margin: auto;
+    display: flex;
+}
+.logoBlock{
+    flex-basis: 18%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.logoBlock > a{
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #000;
+}
+.menuLinks{
+    flex-basis:90%;
+    height: inherit;
+}
+.menuLinks > ul{
+    height: inherit;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.menuLinks > ul> li:first-child{
+    color: #0f62e6;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    margin: 25px;
+}
+
+.menuLinks> ul> :nth-child(2)
+{
+    font-size: 30px;
+    font-weight: lighter;
+    font-family:'Times New Roman', Times, serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menuLinks> ul> :nth-child(3){
+    color: #000;
+    display: flex;
+    font-size: 25px;
+    align-items: center;
+    transition: all 0.2s ease;
+    margin-left: 25px;
+    margin-right: 90px;
+}
+
+.menuLinks> ul> :nth-child(3) :hover{
+    color: #0f62e6;
+    transition: all 0.2s ease;
+}
+
+.menuLinks> ul> :nth-child(4){
+    margin: 25px;
+    display: flex;
+    font-family: sans-serif;
+}
+
+.menuLinks> ul> :nth-child(5){
+    margin: 25px;
+    display: flex;
+    font-family: sans-serif;
+}
+
+.menuLinks> ul> :last-child button{
+    margin: 25px;
+    border: none;
+    padding: 13px 24px;
+    border-radius: 40px;
+    background-color: #116dff;
+}
+
+.menuLinks> ul> :last-child a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    display: inline-block;
+    font-family: sans-serif;
+}
+.menuLinks> ul> :last-child a:visited{ 
+    color: #fff;
+}
+
+.midnav{ 
+    width: 100%;
+    height: 110px;  
+}
+
+body{
+    background-image: url("./shutterstock-598982060.webp");
+    background-size:contain;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    
+}
+
+.midnav > article{
+    width: 100%;
+    height: inherit;
+    background-color: #f7f7f7;
+    margin-top: 70px;
+    position: fixed;
+    display: flex;
+}
+
+.title{
+    flex-basis: 50%;
+    height: inherit;
+    display: flex;
+}
+
+.title > ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title > ul > .name{
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    margin-top: 40px;
+    letter-spacing: 3px;
+    margin-left: 420px;
+}
+
+.title > ul > .job{
+    font-family: "Montserrat", sans-serif;
+    margin-left: 420px;
+    font-size: 13px;
+    line-height: 25px;
+    letter-spacing: 2px;
+}
+
+.menu{
+    flex-basis:50%;
+    height: inherit;
+}
+
+.menu > ul{
+    list-style: none;
+    height: inherit;
+    display: flex;
+    align-items: center;
+}
+
+.menu > ul > li > a{
+    font-family: "Montserrat", sans-serif;
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 15px;
+    transition: all 0.3s ease;  
+}
+
+.menu > ul > li a:hover{
+    transition: all 0.3s ease;
+    color: green;
+}
+
+.menu > ul > li:last-child a{
+    color: green;
+}
+
+.menu > ul > li:last-child a > span{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: green;
+    color: white;
+    border-radius: 780%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+}
+
+main > h4{
+    display: flex;
+    align-items: center;
+    font-family:"Poppins", sans-serif;;
+    font-size: 16px;
+    letter-spacing: 3px;
+    justify-content: center;
+    margin-top: 160px;
+    font-weight: 600px;
+}
+
+main > h2{
+    display: flex;
+    align-items: center;
+    font-family: "Kanit", sans-serif;
+    justify-content: center;
+    letter-spacing: 8px;
+    font-weight: 800;
+    font-size: 140px;
+}
+
+main > h3{
+    display: flex;
+    font-family: "Inter", sans-serif;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+main > .bookbtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bookbtn > button{
+    font-family: "Montserrat", sans-serif;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    margin-top: 20px;
+}
+
+.bookbtn > button > a{
+    text-decoration: none;
+    display: flex;
+    background-color: inherit;
+    color: inherit;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.bookbtn > button > a :visited{
+    background-color: inherit;
+    color: inherit;
+}
+
+.bookbtn > button :hover{
+    transition: all 0.2s ease;
+    background-color: #fff;
+    color: #000;
+}
+
+#about > #abt{
+    margin-top: 500px;
+    width: 100%;
+    height: 730px;
+    display: flex;
+}
+
+#abt > .left{
+    list-style: none;
+    background-color: #f7f7f7;
+    height: inherit;
+    display: flex;
+    flex-basis: 50%;
+    flex-direction: column;
+}
+
+#abt > .left > .hyp{
+    font-family: "Montserrat", sans-serif;
+    font-size: 80px;
+    font-weight: 200;
+    display: flex; 
+    margin-top: 10px;
+    margin-left: 350px;
+}
+
+#abt > .left > .abt{
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    font-weight:900px;
+    margin-top: 30px;
+    letter-spacing: 3px;
+    margin-left: 350px;
+}
+
+#abt > .left > .para{
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 40px;
+    line-height: 30px;
+    letter-spacing: 2px;
+    margin-left: 350px;
+}
+
+#abt >.left > .rf{
+    display: flex;
+    margin-top: 40px; 
+    margin-left: 350px;
+}
+
+.rf > .read{
+    font-family: "Montserrat", sans-serif;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    margin-top: 20px;
+    margin-right: 15px;
+}
+
+.rf > .read > .rm{
+    text-decoration: none;
+    display: flex;
+    background-color: inherit;
+    color: inherit;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 22px;
+    padding-right: 22px;
+}
+
+.rf > .read > .rm :visited{
+    background-color: inherit;
+    color: inherit;
+}
+
+.rf > .read :hover{
+    transition: all 0.2s ease;
+    background-color: #fff;
+    color: #000;
+}
+
+.rf > .free{
+    font-family: "Montserrat", sans-serif;
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    margin-top: 20px;
+    margin-right: 15px;
+}
+
+.rf > .free > .fc{
+    text-decoration: none;
+    display: flex;
+    background-color: inherit;
+    color: inherit;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 22px;
+    padding-right: 22px;
+}
+
+.rf > .free > .fc :visited{
+    background-color: inherit;
+    color: inherit;
+}
+
+.rf > .free :hover{
+    transition: all 0.2s ease;
+    background-color: #000;
+    color: #fff;
+}
+
+#abt > .right{
+    list-style: none;
+    height: inherit;
+    display: flex;
+    flex-basis: 50%;
+}
+
+#abt > .right >li{
+    display: flex;
+    width: 100%;
+    height: inherit;
+    background-image: url("hitman-hitman-absolution-video-games-agent-47-wallpaper-preview.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#help > #hchy{
+    background-image: url("./mountain.jpg");
+    background-size:cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 950px;
+    display: flex;
+    flex-direction: column;
+}
+
+#hchy > #hy > #hy1{
+    font-family: "Montserrat", sans-serif;
+    font-size: 80px;
+    font-weight: 200;
+    display: flex;
+    align-items: flex-start;
+    margin-left: 355px;
+}
+
+#hchy > #hy > #hy2{
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    font-weight: 200;
+    display: flex;
+    margin-top: 25px;
+    margin-left: 355px;
+    letter-spacing: 3px;
+}
+
+#hchy > #feat{
+    display: flex;
+    list-style: none;
+    margin-top: 100px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#feat > #fc > #fd{
+    border: solid #000 6px;
+    margin-right: 50px;
+}
+
+#fd > #fdm > #fdml{
+    list-style: none;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#fdml > #fdml1{
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    text-align: center;
+    display: flex;
+}
+
+#fdml > #fdml2{
+    font-family: "Montserrat", sans-serif;
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+    display: flex;
+}
+
+#fdml > #fdml3{
+    margin-top: 15px;
+    width: 90%;
+}
+
+#fdml > #fdml4{
+    font-family: "Montserrat", sans-serif;
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+    display: flex;
+}
+
+
+#fdml5 > #bk{
+    font-family: "Montserrat", sans-serif;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    margin-top: 120px;
+}
+
+#fdml5 > #bk> #bka{
+    text-decoration: none;
+    display: flex;
+    background-color: inherit;
+    color: inherit;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 22px;
+    padding-right: 22px;
+}
+
+#fdml5 > #bk> #bka :visited{
+    background-color: inherit;
+    color: inherit;
+}
+
+#feat > #oc > #ocd{
+    border: solid #000 6px;
+    margin-right: 50px;
+}
+
+#ocd > #ocdm > #ocdml{
+    list-style: none;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#ocdml > #ocdml1{
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    text-align: center;
+    display: flex;
+}
+
+#ocdml > #ocdml2{
+    font-family: "Montserrat", sans-serif;
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+    display: flex;
+}
+
+#ocdml > #ocdml3{
+    margin-top: 15px;
+    width: 90%;
+}
+
+#ocdml > #ocdml4{
+    font-family: "Montserrat", sans-serif;
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+    display: flex;
+}
+
+#ocdml > #ocdml5{
+    font-family: "Montserrat", sans-serif;
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+    display: flex;
+}
+
+#ocdml6 > #bk1{
+    font-family: "Montserrat", sans-serif;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    margin-top: 94px;
+}
+
+#ocdml6 > #bk1> #bk1a{
+    text-decoration: none;
+    display: flex;
+    background-color: inherit;
+    color: inherit;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 22px;
+    padding-right: 22px;
+}
+
+#ocdml6 > #bk1> #bk1a :visited{
+    background-color: inherit;
+    color: inherit;
+}
+
+
+#feat > #siw > #siwd{
+    border: solid #000 6px;
+}
+
+#siwd > #siwdm > #siwdml{
+    list-style: none;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#siwdml > #siwdml1{
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    text-align: center;
+    display: flex;
+}
+
+#siwdml > #siwdml2{
+    font-family: "Montserrat", sans-serif;
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+    display: flex;
+}
+
+#siwdml > #siwdml3{
+    margin-top: 15px;
+    width: 90%;
+}
+
+#siwdml > #siwdml4{
+    font-family: "Montserrat", sans-serif;
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+    display: flex;
+}
+
+#siwdml > #siwdml5{
+    font-family: "Montserrat", sans-serif;
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+    display: flex;
+}
+
+#siwdml > #siwdml7{
+    font-family: "Montserrat", sans-serif;
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+    display: flex;
+}
+
+#siwdml7 > #bk2{
+    font-family: "Montserrat", sans-serif;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    margin-top: 38px;
+}
+
+#siwdml7 > #bk2> #bk2a{
+    text-decoration: none;
+    display: flex;
+    background-color: inherit;
+    color: inherit;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 22px;
+    padding-right: 22px;
+}
+
+#siwdml7 > #bk2> #bk2a :visited{
+    background-color: inherit;
+    color: inherit;
+}
+
+#hchy > #msd{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+#hchy > #msd > #ms{
+    font-family: "Montserrat", sans-serif;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+#msd > #ms > #msa{
+    text-decoration: none;
+    display: flex;
+    background-color: inherit;
+    color: inherit;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#msd > #ms > #msa :visited{
+    background-color: inherit;
+    color: inherit;
+}
+
+#hchy > #msd > #ms:hover{
+    transition: all 0.2s ease;
+    background-color: #fff;
+    color: #000;
+}
+
+
+.bottomnav{
+    background-color: #57BBBF;
+    width: 100%;
+    height: 690px;
+}
+
+.bottomnav > .bts{
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: row;
+}
+
+.bts > #btleft{
+    display: flex;
+    flex-basis: 50%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 55px;
+    margin-bottom: 80px;
+}
+
+#btleft > #btlist{
+    list-style: none;
+   
+}
+
+#btlist > #btl1{
+    font-size: 80px;
+    font-weight: 100;
+    display: flex; 
+    margin-top: 5px;
+    
+}
+
+#btlist > #btl2{
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+#btlist > #btl3{
+    margin-top: 70px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+#btlist > #btl4{
+    margin-top: 40px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+#btlist > #btl5{
+    margin-top: 40px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+#btlist > #btl5 :link{
+    text-decoration: none;
+    color: #000;
+}
+
+#btlist > #btl5 :visited{
+    text-decoration: none;
+    color: #000;
+}
+
+#btlist > #btl6 > #btl6u{
+    margin-top: 35px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+}
+
+#btl6u > #btl6u1{
+    margin-right: 20px;
+    text-decoration: none;
+    color: #000;
+    padding: 1px;
+}
+
+#btl6u > #btl6u1 :link{
+    color: #000;
+}
+
+#btl6u > #btl6u1 :visited{
+    color: #000;
+}
+
+#btl6u > #btl6u2{
+    margin-right: 20px;
+    text-decoration: none;
+    color: #000;
+    padding: 1px;
+}
+
+#btl6u > #btl6u2 :link{
+    color: #000;
+}
+
+#btl6u > #btl6u2 :visited{
+    color: #000;
+}
+
+#btl6u > #btl6u3{
+    margin-right: 20px;
+    text-decoration: none;
+    color: #000;
+    padding: 1px;
+}
+
+#btl6u > #btl6u3 :link{
+    color: #000;
+}
+
+#btl6u > #btl6u3 :visited{
+    color: #000;
+}
+
+#btl6u > #btl6u4{
+    text-decoration: none;
+    color: #000;
+    padding: 1px;
+}
+
+#btl6u > #btl6u4 :link{
+    color: #000;
+}
+
+#btl6u > #btl6u4 :visited{
+    color: #000;
+}
+
+#btlist > #btl7{
+
+    margin-top: 60px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+#btlist > #btl7 :link{
+    color: #000;
+}
+
+#btlist > #btl7 :visited{
+    color: #000;
+}
+
+#btright{
+    display: flex;
+    flex-basis: 50%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#btright > #btform{
+    font-weight: 400;
+    margin-top: 110px;
+}
+
+#btform > #name{
+    outline: 1px solid;
+    border: 1.5px solid;
+    background-color: #57BBBF;
+    width: 403px;
+    height: 35px;
+    text-align: left;
+    padding-left: 2px;
+    font-size: 14px;
+}
+
+
+#btform > #mail{
+    outline: 1px solid;
+    border: 1.5px solid;
+    background-color: #57BBBF;
+    width: 403px;
+    height: 35px;
+    text-align: left;
+    padding-left: 2px;
+    font-size: 14px;
+}
+
+#btform > #sub{
+    outline: 1px solid;
+    border: 1.5px solid;
+    background-color: #57BBBF;
+    width: 403px;
+    height: 35px;
+    text-align: left;
+    padding-left: 2px;
+    font-size: 14px;
+}
+
+#btform > #msg{
+    outline: 1px solid;
+    border: 1.5px solid;
+    background-color: #57BBBF;
+    width: 403px;
+    height: 150px;
+    text-align: left;
+    padding:5px 0px 0px 2px;
+    resize: none;
+}
+
+#btform > #sb{
+    margin: 10px 0px 0px 274px;
+    border: 1.5px solid #000;
+
+}
+
+#btform > #sb > #sba{
+    font-family: "Montserrat", sans-serif;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    text-decoration: none;
+    padding: 10px 40px;
+    transition: all 0.2s ease;
+}
+
+#btform > #sb > #sba:hover{
+    color: #000;
+    background-color: #fff;
+    transition: all 0.2s ease;
+}
+
+#btform > .label{
+    display: flex;
+    margin: 10px 0px 0px 0px;
+}
